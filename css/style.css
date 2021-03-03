@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto";
+  font-weight: 100;
 }
 
 form {
@@ -14,10 +15,9 @@ form {
 }
 span {
   display: flex;
-  border: 1px solid gray;
 }
 span > div {
-  border: 2px dashed darksalmon;
+  /* border: 2px dashed darksalmon; */
   display: block;
   width: 50%;
   margin-top: auto;
@@ -25,7 +25,6 @@ span > div {
 }
 div > div:nth-child(1n) {
   margin: 3%;
-  background-color: darkseagreen;
 }
 
 button {
@@ -38,8 +37,17 @@ button {
   margin-right: auto;
   width: 100%;
   text-align: left;
+  font-weight: 500;
 }
-
+#fb {
+  background-color: darkseagreen;
+}
+#ig {
+  background-color: rgb(118, 165, 142);
+}
+#tw {
+  background-color: darkslategray;
+}
 .center {
   border: none;
   margin-left: auto;
@@ -59,6 +67,7 @@ span fieldset {
   padding: 2%;
   width: 50%;
   margin: 1%;
+  border: none;
 }
 fieldset span {
   position: relative;
@@ -70,25 +79,47 @@ fieldset span {
 }
 fieldset legend {
   text-align: center;
+
+  color: darksalmon;
+  font-weight: 500;
 }
 /* fieldset {
   border: none;
 } */
 input {
   display: block;
+  border: none;
+  border-bottom: 0.2px solid salmon;
 }
 fieldset i {
   display: block;
-  padding-right: 2%;
+  padding-right: 5%;
 }
-.rest {
-  border: 1px solid hotpink;
+form:first-child(2) {
+  border-bottom: 1px solid salmon;
+  border-width: 90%;
 }
 .rest a {
   text-align: center;
   margin: 0.5%;
+  color: darksalmon;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
 }
-.rest :nth-child(1) {
+.rest div:nth-child(1) a {
+  margin-right: 2%;
+  float: right;
+}
+.rest div:nth-child(2) a {
+  margin-left: 2%;
+  float: left;
+}
+.rest div:nth-child(1) {
+  border-right: 1px solid darksalmon;
+}
+.rest div:nth-child(2) {
+  border-left: 1px solid darksalmon;
 }
 .member {
   border: none;
@@ -103,6 +134,7 @@ fieldset i {
   border: none;
   border-radius: 2px;
   float: right;
-  background-color: olivedrab;
+  background-color: darksalmon;
   padding: 2%;
+  font-weight: 500;
 }
