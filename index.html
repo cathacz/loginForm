@@ -17,19 +17,27 @@
   </head>
   <body>
     <form action="index.js" method="GET">
+      <!-- left site -->
       <span>
         <div class="butt">
-          <button type="submit">
-            <i class="fab fa-facebook-f"></i>Facebook Login
-          </button>
-          <button type="submit">
-            <i class="fab fa-instagram"></i>Instagram Login
-          </button>
+          <div>
+            <button type="submit">
+              <i class="fab fa-facebook-f"></i>Facebook Login
+            </button>
+          </div>
+          <div>
+            <button type="submit">
+              <i class="fab fa-instagram"></i>Instagram Login
+            </button>
+          </div>
 
-          <button type="submit">
-            <i class="fab fa-twitter"></i>Twitter Login
-          </button>
+          <div>
+            <button type="submit">
+              <i class="fab fa-twitter"></i>Twitter Login
+            </button>
+          </div>
         </div>
+        <!-- right site -->
         <fieldset>
           <legend>Sign in with</legend>
           <span>
@@ -47,8 +55,20 @@
               name="password"
               id="2"
               placeholder="Password"
-          /></span></fieldset
+            />
+          </span>
+          <span class="member">
+            <input type="checkbox" name="rememberMe" id="3" /><label
+              >Remember me</label
+            >
+            <input type="button" value="Login" />
+          </span></fieldset
       ></span>
+      <!-- bottom -->
+      <span class="rest">
+        <a href="fakesite">Register now</a>
+        <a href="fakesite">Forgotten?</a>
+      </span>
     </form>
   </body>
 </html>
