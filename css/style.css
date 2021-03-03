@@ -90,15 +90,19 @@ input {
   display: block;
   border: none;
   border-bottom: 0.2px solid salmon;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
 }
 fieldset i {
   display: block;
-  padding-right: 5%;
+  padding-right: %;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
 }
-form:first-child(2) {
-  border-bottom: 1px solid salmon;
-  border-width: 90%;
-}
+
 .rest a {
   text-align: center;
   margin: 0.5%;
@@ -124,6 +128,11 @@ form:first-child(2) {
 .member {
   border: none;
   margin-top: 5%;
+  width: 100%;
+}
+label {
+  width: 100%;
+  margin-left: 0%;
 }
 #check {
   margin-right: 1%;
@@ -137,4 +146,7 @@ form:first-child(2) {
   background-color: darksalmon;
   padding: 2%;
   font-weight: 500;
+}
+i {
+  font-size: 120%;
 }
