@@ -64,8 +64,19 @@ fieldset i {
   margin: 0.5%;
 }
 .rest :nth-child(1) {
-  float: left;
 }
 .member {
   border: none;
+  margin-top: 5%;
+}
+#3 {
+  background-color: palegreen;
+}
+.login {
+  position: relative;
+  border: none;
+  border-radius: 2px;
+  float: right;
+  background-color: olivedrab;
+  padding: 2%;
 }
