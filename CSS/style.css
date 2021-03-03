@@ -4,4 +4,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+form {
+  border: 2px dashed salmon;
+  margin: 25% auto;
+  width: 50%;
+  height: auto;
+}
+span {
+  display: flex;
+}
+span div {
+  display: block;
+  width: 50%;
+}
+button {
+  width: 30%;
+  padding: 2%;
+  border: none;
+}
+button i {
+  display: inline-flexbox;
+  padding-right: 10%;
+}
+span fieldset {
+  padding: 2%;
+  width: 50%;
+}
+fieldset span {
+  position: relative;
+  padding-bottom: 2%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+input {
+  display: block;
+}
+fieldset i {
+  display: block;
+  padding-right: 2%;
 }

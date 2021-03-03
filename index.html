@@ -9,13 +9,45 @@
       rel="stylesheet"
       href="../loginForm/CSS/fontAwesome/fontawesome-free-5.15.2-web/css/all.css"
     />
+    <link
+      rel="shortcut icon"
+      href="../loginForm/img/rocket.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <i class="fab fa-twitter"></i>
     <form action="index.js" method="GET">
-      <span
-        ><fieldset></fieldset>
-        <fieldset></fieldset
+      <span>
+        <div class="butt">
+          <button type="submit">
+            <i class="fab fa-facebook-f"></i>Facebook Login
+          </button>
+          <button type="submit">
+            <i class="fab fa-instagram"></i>Instagram Login
+          </button>
+
+          <button type="submit">
+            <i class="fab fa-twitter"></i>Twitter Login
+          </button>
+        </div>
+        <fieldset>
+          <legend>Sign in with</legend>
+          <span>
+            <i class="fas fa-user-astronaut"></i
+            ><input
+              type="text"
+              name="name"
+              placeholder="Username or email"
+              id="1"
+          /></span>
+          <span
+            ><i class="fas fa-unlock-alt"></i
+            ><input
+              type="password"
+              name="password"
+              id="2"
+              placeholder="Password"
+          /></span></fieldset
       ></span>
     </form>
   </body>
