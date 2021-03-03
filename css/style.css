@@ -6,12 +6,9 @@
   box-sizing: border-box;
   font-family: "Roboto";
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 form {
-  margin: 25% auto;
+  margin: 15% auto;
   width: 50%;
   height: auto;
 }
@@ -19,28 +16,49 @@ span {
   display: flex;
   border: 1px solid gray;
 }
-span div {
+span > div {
+  border: 2px dashed darksalmon;
   display: block;
   width: 50%;
-  margin: 5%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-span div :nth-child(1) {
-  width: 40%;
+div > div:nth-child(1n) {
+  margin: 3%;
+  background-color: darkseagreen;
 }
+
 button {
-  padding: 2%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 25%;
+  padding-right: 25%;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  text-align: left;
+}
+
+.center {
   border: none;
   margin-left: auto;
   margin-right: auto;
 }
+button:hover,
+.login:hover {
+  cursor: pointer;
+}
 button i {
   display: inline-flexbox;
   padding-right: 10%;
+  float: left;
+  size: 160%;
 }
 span fieldset {
   padding: 2%;
   width: 50%;
-  margin: 5%;
+  margin: 1%;
 }
 fieldset span {
   position: relative;
@@ -48,7 +66,14 @@ fieldset span {
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  border: none;
 }
+fieldset legend {
+  text-align: center;
+}
+/* fieldset {
+  border: none;
+} */
 input {
   display: block;
 }
@@ -69,7 +94,8 @@ fieldset i {
   border: none;
   margin-top: 5%;
 }
-#3 {
+#check {
+  margin-right: 1%;
   background-color: palegreen;
 }
 .login {
