@@ -8,7 +8,7 @@
   font-weight: 100;
 }
 
-form {
+main {
   margin: 15% auto;
   width: 50%;
   height: auto;
@@ -50,22 +50,20 @@ button {
 }
 .center {
   border: none;
-  margin-left: auto;
-  margin-right: auto;
+  flex-direction: column;
 }
 button:hover,
 .login:hover {
   cursor: pointer;
 }
 button i {
-  display: inline-flexbox;
   padding-right: 10%;
   float: left;
   size: 160%;
 }
 span fieldset {
   padding: 2%;
-  width: 50%;
+  width: 90%;
   margin: 1%;
   border: none;
 }
@@ -79,7 +77,7 @@ fieldset span {
 }
 fieldset legend {
   text-align: center;
-
+  border: none;
   color: darksalmon;
   font-weight: 500;
 }
@@ -154,18 +152,22 @@ i {
 main {
   display: grid;
   border: 2px dashed salmon;
-  grid-template-columns: 15fr 1fr 15fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 10fr 2fr 10fr;
+  grid-template-rows: 3fr 3fr 3fr 1fr;
   grid-template-areas:
     "fb middle form "
     "ig middle form "
-    "tw middle button";
+    "tw middle button"
+    "rest rest rest";
   gap: 1rem;
   padding: 1rem;
 }
 
 div {
-  border: rgb(118, 165, 142) 2px dashed;
+  /* border: rgb(118, 165, 142) 2px dashed; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #fb {
   grid-area: fb;
@@ -178,25 +180,39 @@ div {
 }
 .middle {
   grid-area: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .form {
   grid-area: form;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .button {
   grid-area: button;
 }
 .circle {
-  border: 1px solid salmon;
+  border: 2px solid lightsalmon;
   border-radius: 100%;
-  height: 2rem;
   width: 2rem;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   color: salmon;
-  font-weight: 600;
-  background-color: lightsalmon;
+  font-weight: 500;
+}
+.line {
+  border: lightsalmon 1px solid;
+  height: 100%;
+}
+.rest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
