@@ -151,4 +151,37 @@ i {
   font-size: 120%;
 }
 
-/* trying the new branch cuz I am scared */
+main {
+  display: grid;
+  border: 2px dashed salmon;
+  grid-template-columns: 5fr 1fr 5fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "fb middle form "
+    "ig middle form "
+    "tw middle button";
+  gap: 1rem;
+  padding: 1rem;
+}
+
+div {
+  border: rgb(118, 165, 142) 2px dashed;
+}
+#fb {
+  grid-area: fb;
+}
+#ig {
+  grid-area: ig;
+}
+#tw {
+  grid-area: tw;
+}
+.middle {
+  grid-area: middle;
+}
+.form {
+  grid-area: form;
+}
+.button {
+  grid-area: button;
+}
